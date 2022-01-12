@@ -33,7 +33,7 @@ index.get('', function(req, res) {
 });
 
 index.get('/help', (req, res) => {
-    res.render('index', {
+    res.render('help', {
         title: 'Help',
         name: 'Viktor',
     });
