@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{>styles}}
+    {{>scripts}}
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <table style="width: 100%">
+            <tr>
+                <td>Your location</td>
+                <td></td>
+                <td>{{ city }}</td>
+            </tr>
+            <tr>
+                <td>Temperature</td>
+                <td></td>
+                <td>{{ weather.temp }} C</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td></td>
+                <td>{{ weather.description }} C</td>
+            </tr>
+            <tr>
+                <td>Rain probability</td>
+                <td></td>
+                <td>{{ weather.probability }} %</td>
+            </tr>
+            <tr>
+                <td>Feels like</td>
+                <td></td>
+                <td>{{ weather.feels }} C</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><img src="{{weather.image}}" alt="weather"></td>
+            </tr>
+        </table>
+    </div>
+    {{>footer}}
+</body>
+</html>

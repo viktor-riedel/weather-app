@@ -1,1 +1,1 @@
-weather-app
+weather-index

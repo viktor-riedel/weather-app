@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{>styles}}
+    {{>scripts}}
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>My name is {{ name }}</p>
+        <img src="/assets/img/me.webp" alt="me" class="me">
+    </div>
+    {{>footer}}
+</body>
+</html>
